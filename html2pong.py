@@ -24,7 +24,9 @@ def create_colored_bmp(filename, width, height, color_index,input_text):
             for j in range(len(hh)):
                 try:
                     iii.text((y, 30),hh[j])
-                    y=y+40
+                    y=y+20
+                except:
+                    xgate="
             # Salva a imagem como um arquivo BMP de 24 bits
             image.save(filename, "PNG")
 
