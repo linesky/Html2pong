@@ -22,9 +22,9 @@ def create_colored_bmp(filename, width, height, color_index,input_text):
             iii=ImageDraw.Draw(image)
             hh=input_text.split("\n")
             for j in range(len(hh)):
-                print(hh[j])
-                iii.text((y, 30),hh[j])
-            y=y+40
+                try:
+                    iii.text((y, 30),hh[j])
+                    y=y+40
             # Salva a imagem como um arquivo BMP de 24 bits
             image.save(filename, "PNG")
 
